@@ -1,0 +1,56 @@
+### 🆕 Add a Book
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "The Hobbit",
+  "author": "J.R.R. Tolkien",
+  "year": 1937
+}
+###
+
+### 🆕 Add Another Book
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "The Matrix",
+  "author": "Neo",
+  "year": 1999
+}
+###
+
+### 🆕 Add Another Book
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "Iron man",
+  "author": "Tony Stark",
+  "year": 2004
+}
+###
+
+### 📚 Get All Books
+GET http://localhost:3000/books
+
+###
+
+### 🔍 Get Book by ID
+GET http://localhost:3000/books/2
+###
+
+### 🆕 Update Book by ID 
+PUT http://localhost:3000/books/2
+Content-Type: application/json  
+
+{
+  "title": "The Matrix Reloaded",
+  "author": "Neo",
+  "year": 2024
+}
+###
+
+### 🗑️ Delete Book by ID
+DELETE http://localhost:3000/books/3
+###
