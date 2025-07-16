@@ -1,16 +1,26 @@
 {
   "name": "book-store",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cross-env DB_NAME=bookstore_test jest --runInBand"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "books",
+    "store",
+    "express",
+    "postgresql"
+  ],
+  "author": "Arun Visak",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "express": "^5.1.0",
     "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^30.0.4",
+    "supertest": "^7.1.3"
   }
 }
